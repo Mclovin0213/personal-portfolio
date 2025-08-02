@@ -1,0 +1,11 @@
+# Task ID: 5
+# Title: Build the Projects Section Layout and Cards
+# Status: pending
+# Dependencies: 2
+# Priority: high
+# Description: Implement the main 'Projects' section, which is the focal point of the portfolio. Create a responsive grid layout for project cards, each displaying a title, a brief description, a thumbnail image, and links to the live demo and GitHub repository.
+# Details:
+Create a reusable `ProjectCard` component that accepts project data via props. Use CSS Grid or Flexbox to arrange the cards. Add a subtle hover effect to indicate interactivity.
+
+# Test Strategy:
+Confirm that project cards are displayed in a responsive grid. Check that each card shows the correct title, description, image, and that the 'Live Demo' and 'GitHub' links are present.

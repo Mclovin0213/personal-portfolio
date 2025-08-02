@@ -1,0 +1,144 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Project Setup and Core SPA Structure",
+        "description": "Initialize a new React project, set up the basic file structure for a single-page application (SPA), and install initial dependencies including the `react-starfield` package.",
+        "details": "Use Vite or Create React App to bootstrap the project. Establish a component-based architecture with folders for sections (e.g., Hero, About, Projects). Install `react-starfield` and any other foundational libraries.",
+        "testStrategy": "Verify that the React development server runs without errors using `npm run dev` or `npm start`. Check `package.json` to confirm all necessary dependencies are installed correctly.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Implement Navigation Bar and Starfield Background",
+        "description": "Create a sleek, transparent, fixed navigation bar that becomes more prominent on scroll. Integrate the `react-starfield` package as the main dynamic background for the entire application.",
+        "details": "The navigation bar should be a fixed-position component with smooth-scrolling links to page sections. A scroll event listener should trigger a style change (e.g., adding a background color). The `react-starfield` component should be placed in the root layout component.",
+        "testStrategy": "Scroll the page to confirm the navigation bar's appearance changes as specified. Verify the starfield is visible, animates correctly, and does not hinder performance. Test navigation links to ensure they scroll to the correct sections.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Develop the Hero Section",
+        "description": "Build the Hero section featuring a prominent space-themed header, the developer's name, a short, impactful headline, and links to key social profiles like GitHub and LinkedIn.",
+        "details": "This component should be the first thing a user sees. Text should have high contrast against the starfield background. Social links should be represented by icons.",
+        "testStrategy": "Visually inspect the Hero section to ensure all elements are present and correctly styled according to the space theme. Click social links to verify they open the correct URLs in a new tab.",
+        "priority": "high",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Create the 'About Me' and 'Education' Sections",
+        "description": "Develop the 'About Me' section with a personal introduction and professional headshot. Also, create the 'Education' section with a clean list of degrees and institutions.",
+        "details": "For the 'About Me' section, ensure text is clean and readable. For the 'Education' section, map over a data array to render each educational entry.",
+        "testStrategy": "Verify that both sections render correctly with placeholder or actual content. Check that the headshot image loads and that all text is legible against the background.",
+        "priority": "medium",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Build the Projects Section Layout and Cards",
+        "description": "Implement the main 'Projects' section, which is the focal point of the portfolio. Create a responsive grid layout for project cards, each displaying a title, a brief description, a thumbnail image, and links to the live demo and GitHub repository.",
+        "details": "Create a reusable `ProjectCard` component that accepts project data via props. Use CSS Grid or Flexbox to arrange the cards. Add a subtle hover effect to indicate interactivity.",
+        "testStrategy": "Confirm that project cards are displayed in a responsive grid. Check that each card shows the correct title, description, image, and that the 'Live Demo' and 'GitHub' links are present.",
+        "priority": "high",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Implement Project Card Expansion (Detailed View)",
+        "description": "Add functionality for clicking a project card to expand or open a modal, revealing a detailed view. This view must include a full description, a list of technologies used (with icons), and details on technical challenges and solutions.",
+        "details": "Use component state to manage the visibility of the detailed view (modal or inline expansion). The detailed view should be populated with data specific to the clicked project. Use an icon library for technology logos.",
+        "testStrategy": "Click on a project card and verify that the detailed view appears. Confirm it displays the correct project's full description, tech stack, and images. Test the closing mechanism of the detailed view.",
+        "priority": "high",
+        "dependencies": [
+          5
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Design and Implement the Skills Section",
+        "description": "Create a visually representative 'Skills' section. Categorize skills by technology type (e.g., Languages, Frameworks) and use icons and a clear visual indicator for proficiency levels.",
+        "details": "Structure skill data in a JSON object or file for easy management. Use an icon library like `react-icons`. The proficiency indicator can be a simple text label ('Proficient', 'Intermediate') or a visual bar.",
+        "testStrategy": "Check that skills are correctly categorized and that each skill displays its corresponding icon and proficiency level. Ensure the layout is clean and easy to understand.",
+        "priority": "medium",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Develop Experience Timeline Section",
+        "description": "Build the 'Experience' section as a chronological timeline of professional experience. Each entry should include Company Name, Job Title, Dates, and a list of key responsibilities.",
+        "details": "Use CSS to create a vertical timeline structure. Map over an array of job data to dynamically generate the timeline entries. Company logos can be included for visual appeal.",
+        "testStrategy": "Review the Experience section to ensure all entries are displayed in the correct chronological order and contain all required information (company, title, dates, responsibilities).",
+        "priority": "medium",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 9,
+        "title": "Create the 'Contact Me' Section",
+        "description": "Implement the 'Contact Me' section with clear calls to action. Must include links to email, GitHub, and LinkedIn. An optional simple contact form can be included.",
+        "details": "Links should be functional (`mailto:` for email). If a contact form is included, it can be a UI placeholder initially, without backend logic. The design should encourage connection.",
+        "testStrategy": "Click on the email, GitHub, and LinkedIn links to verify they function as expected. If a form is built, check its layout and input field validation (if any).",
+        "priority": "medium",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 10,
+        "title": "Ensure Full Responsiveness and Accessibility",
+        "description": "Refactor and test the entire application to ensure it is fully responsive on desktop, tablet, and mobile devices. Implement accessibility features according to WCAG standards.",
+        "details": "Use CSS media queries to adjust layouts for different screen sizes. Add `alt` text to all images, use semantic HTML tags, and ensure the site is navigable using only a keyboard.",
+        "testStrategy": "Use browser developer tools to test the layout on various screen sizes (e.g., 375px, 768px, 1280px). Use a screen reader to test navigation. Run a Lighthouse audit and aim for scores above 90 in Accessibility, Performance, and SEO.",
+        "priority": "high",
+        "dependencies": [
+          3,
+          4,
+          6,
+          7,
+          8,
+          9
+        ],
+        "status": "pending",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-02T06:46:53.731Z",
+      "updated": "2025-08-02T07:31:24.111Z",
+      "description": "Tasks for master context"
+    }
+  }
+}
