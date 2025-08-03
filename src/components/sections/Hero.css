@@ -4,7 +4,7 @@
   align-items: center;
   height: 100vh;
   text-align: center;
-  color: white;
+  color: var(--text-color-light);
 }
 
 .hero-content {
@@ -23,7 +23,7 @@
 
 .social-links a {
   margin: 0 1rem;
-  color: white;
+  color: var(--text-color-light);
   font-size: 2rem;
   transition: color 0.3s;
 }

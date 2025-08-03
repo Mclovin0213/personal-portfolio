@@ -3,14 +3,9 @@ import './Education.css';
 
 const education = [
   {
-    degree: 'Bachelor of Science in Computer Science',
-    institution: 'University of Example',
-    year: '2022'
-  },
-  {
-    degree: 'Master of Science in Artificial Intelligence',
-    institution: 'Another University of Example',
-    year: '2024'
+    degree: 'Bachelor of Science (BS) in Computer Software Engineering',
+    institution: 'California Baptist University',
+    year: '2020 – 2025'
   }
 ];
 

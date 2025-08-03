@@ -12,14 +12,14 @@
 }
 
 .modal-content {
-  background-color: #1a1a2e;
+  background-color: var(--primary-background);
   padding: 2rem;
   border-radius: 10px;
   max-width: 800px;
   width: 90%;
-  color: #e0e1dd;
+  color: var(--text-color-light);
   position: relative;
-  border: 1px solid #4a4e69;
+  border: 1px solid var(--border-color);
 }
 
 .close-button {
@@ -28,7 +28,7 @@
   right: 1rem;
   background: none;
   border: none;
-  color: #e0e1dd;
+  color: var(--text-color-light);
   font-size: 1.5rem;
   cursor: pointer;
 }

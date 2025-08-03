@@ -7,13 +7,13 @@ const Contact: React.FC = () => {
     <section id="contact" className="contact-section">
       <h2>Contact Me</h2>
       <div className="contact-links">
-        <a href="mailto:your.email@example.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:javellaneda0213@gmail.com" target="_blank" rel="noopener noreferrer">
           <FaEnvelope /> Email
         </a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Mclovin0213" target="_blank" rel="noopener noreferrer">
           <FaGithub /> GitHub
         </a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+        <a href="http://www.linkedin.com/in/julianavellaneda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
           <FaLinkedin /> LinkedIn
         </a>
       </div>

@@ -2,7 +2,7 @@
   "models": {
     "main": {
       "provider": "gemini-cli",
-      "modelId": "gemini-2.5-pro",
+      "modelId": "gemini-2.5-flash",
       "maxTokens": 65536,
       "temperature": 0.2
     },
@@ -13,9 +13,9 @@
       "temperature": 0.1
     },
     "fallback": {
-      "provider": "ollama",
-      "modelId": "qwen3:latest",
-      "maxTokens": 120000,
+      "provider": "gemini-cli",
+      "modelId": "gemini-2.5-flash",
+      "maxTokens": 65536,
       "temperature": 0.2
     }
   },

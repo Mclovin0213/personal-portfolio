@@ -3,33 +3,62 @@ import './Experience.css';
 
 const experiences = [
   {
-    company: 'Tech Solutions Inc.',
-    title: 'Senior Software Engineer',
-    dates: 'Jan 2022 - Present',
+    company: 'Coding Mind Academy',
+    title: 'Programming Instructor',
+    dates: 'August 2024 – Present (1 year 1 month)',
+    location: 'Diamond Bar, California, United States (Hybrid)',
     responsibilities: [
-      'Led the development of a new microservices-based architecture.',
-      'Mentored junior engineers and conducted code reviews.',
-      'Improved application performance by 30% through optimization.'
+      'Teach K–12 students multiple programming languages and frameworks including Python, Java, HTML, CSS, JavaScript, Flutter, Firebase, and Dart.',
+      'Develop individualized lesson plans tailored to student needs and skill levels.',
+      'Debug code live with students and provide end-to-end support for app development.',
+      'Directly contributed to the successful launch of 6+ mobile apps on Google Play and Apple App Store through collaborative coding, project mentoring, and co-authoring student research.'
     ]
   },
   {
-    company: 'Innovate Co.',
-    title: 'Software Engineer',
-    dates: 'Jun 2019 - Dec 2021',
+    company: 'IntelliEvent',
+    title: 'Development Intern',
+    dates: 'May 2024 – June 2024 (2 months)',
+    location: 'Riverside, California, United States (Hybrid)',
     responsibilities: [
-      'Developed and maintained features for a large-scale web application.',
-      'Collaborated with cross-functional teams to deliver high-quality software.',
-      'Wrote and maintained unit and integration tests.'
+      'Gained hands-on experience in a professional development environment.',
+      'Used React and ASP.NET C# REST API to develop and maintain web applications.',
+      'Navigated technical documentation and troubleshot complex problems with production-level code.',
+      'Collaborated with a team of developers, attending daily meetings and providing weekly progress reports.',
+      'Gained sales experience by marketing software at a trade show, delivering a 90-second pitch to potential clients.',
+      'Contributed to lead generation efforts by making cold calls to prospective customers.'
     ]
   },
   {
-    company: 'Data Systems',
-    title: 'Junior Software Engineer',
-    dates: 'Jul 2017 - May 2019',
+    company: 'Coding Mind Academy',
+    title: 'Programming Instructor',
+    dates: 'May 2023 – October 2023 (6 months)',
+    location: 'Irvine, California, United States',
     responsibilities: [
-      'Assisted in the development of a data processing pipeline.',
-      'Fixed bugs and implemented minor features.',
-      'Learned and applied best practices in software development.'
+      'Taught K–12 students multiple programming languages and frameworks including Python, Java, HTML, CSS, JavaScript, Flutter, Firebase, and Dart.',
+      'Developed individualized lesson plans, debugged code live, and supported app development end-to-end.',
+      'Directly contributed to the launch of 2+ mobile apps on Google Play and Apple App Store through collaborative coding, project mentoring, and co-authoring student research.'
+    ]
+  },
+  {
+    company: 'Little Caesars Pizza',
+    title: 'Assistant Manager',
+    dates: 'August 2021 – July 2022 (1 year)',
+    location: 'Corona, California, United States',
+    responsibilities: [
+      'Supervised, motivated, and directed employees to complete tasks efficiently.',
+      'Maintained proficiency in all store stations, ensuring ability to switch tasks as needed.',
+      'Handled cash and card transactions, tracked inventory, created employee schedules, trained new employees, conducted interviews, and counted daily profits.'
+    ]
+  },
+  {
+    company: 'Visión2010',
+    title: 'Event Staff',
+    dates: 'January 2018 – March 2020 (2 years 3 months)',
+    location: 'Riverside, California, United States (On-site)',
+    responsibilities: [
+      'Worked at 30+ events, including weekly meetings, monthly seminars, and bi-yearly conferences.',
+      'Managed concession stand operations: organized inventory, handled transactions, interacted with customers, and managed profits.',
+      'Served as video/audio production assistant, managing microphone audio for event speakers.'
     ]
   }
 ];

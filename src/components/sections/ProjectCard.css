@@ -1,5 +1,5 @@
 .project-card {
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s;
@@ -31,7 +31,7 @@
 
 .project-links a {
   margin-right: 1rem;
-  color: #61dafb;
+  color: var(--accent-color-1);
   text-decoration: none;
 }
 

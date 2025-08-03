@@ -1,7 +1,7 @@
 .contact-section {
   padding: 4rem 2rem;
-  background-color: #1a1a2e;
-  color: #e0e1dd;
+  background-color: var(--primary-background);
+  color: var(--text-color-light);
   text-align: center;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .contact-links a {
-  color: #00ffc3;
+  color: var(--accent-color-1);
   text-decoration: none;
   font-size: 1.2rem;
   margin: 0 1rem;
@@ -22,16 +22,16 @@
 }
 
 .contact-links a:hover {
-  color: #00b38f;
+  color: var(--accent-color-1);
 }
 
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #2a2a4e;
+  background-color: var(--secondary-background);
   border-radius: 10px;
-  border: 1px solid #4a4e69;
+  border: 1px solid var(--border-color);
 }
 
 .contact-form label {
@@ -45,7 +45,7 @@
   width: calc(100% - 20px);
   padding: 10px;
   margin-bottom: 1rem;
-  border: 1px solid #4a4e69;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   background-color: #1a1a2e;
   color: #e0e1dd;
