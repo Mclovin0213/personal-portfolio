@@ -27,7 +27,7 @@ const Header: React.FC = () => {
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" aria-label="Contact section">Contact</a>
       </nav>
     </header>
   );

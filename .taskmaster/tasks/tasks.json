@@ -35,7 +35,7 @@
         "dependencies": [
           2
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": []
       },
       {
@@ -48,7 +48,7 @@
         "dependencies": [
           2
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": []
       },
       {
@@ -61,7 +61,7 @@
         "dependencies": [
           2
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": []
       },
       {
@@ -74,8 +74,40 @@
         "dependencies": [
           5
         ],
-        "status": "pending",
-        "subtasks": []
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create the Detailed View Component",
+            "description": "Build a new, reusable React component for the detailed project view (e.g., `ProjectDetailModal`). This component will define the static layout and structure for displaying the full description, technology list, and technical challenges, and will include a close button.",
+            "dependencies": [],
+            "details": "The component should be designed to receive a single 'project' object as a prop. Initially, focus on the JSX structure and CSS styling for a modal or an inline expanded container. Use placeholder content to verify the layout.",
+            "status": "done",
+            "testStrategy": "Render the component with mock data to ensure the layout is correct and responsive. Verify the close button is present."
+          },
+          {
+            "id": 2,
+            "title": "Implement State Management and Click-to-Open Logic",
+            "description": "In the parent 'Projects' section component, introduce state to manage which project is currently selected for detailed viewing (e.g., `selectedProject`) and a function to update it. Pass this function as a prop to each `ProjectCard` to handle click events.",
+            "dependencies": [
+              "6.1"
+            ],
+            "details": "Use the `useState` hook in the main projects container (e.g., `const [selectedProject, setSelectedProject] = useState(null);`). The `ProjectCard`'s `onClick` event will call a handler that sets this state with its own project data. Conditionally render the `ProjectDetailModal` component based on whether `selectedProject` is null or not.",
+            "status": "done",
+            "testStrategy": "Click on different project cards. Verify that the detailed view component appears and disappears correctly. Confirm that clicking the close button resets the state and hides the view."
+          },
+          {
+            "id": 3,
+            "title": "Populate View with Dynamic Data and Technology Icons",
+            "description": "Pass the `selectedProject` data from the parent state into the detailed view component. Dynamically render the project's full description, challenges, and solutions. Map over the project's technology array to display each tech name with its corresponding icon from an icon library.",
+            "dependencies": [
+              "6.2"
+            ],
+            "details": "The detailed view component will now use the `project` prop to display its content (e.g., `props.project.fullDescription`). For the technology list, iterate through the `props.project.technologies` array. Use a helper function or a mapping object to associate technology names (e.g., 'React', 'CSS') with specific components from an icon library like `react-icons`.",
+            "status": "done",
+            "testStrategy": "Click on a project card and verify that all displayed information (description, challenges, technologies) is specific to that project. Check that the correct icons are rendered next to each technology name."
+          }
+        ]
       },
       {
         "id": 7,
@@ -87,7 +119,7 @@
         "dependencies": [
           2
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": []
       },
       {
@@ -100,7 +132,7 @@
         "dependencies": [
           2
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": []
       },
       {
@@ -113,7 +145,7 @@
         "dependencies": [
           2
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": []
       },
       {
@@ -131,13 +163,13 @@
           8,
           9
         ],
-        "status": "pending",
+        "status": "done",
         "subtasks": []
       }
     ],
     "metadata": {
       "created": "2025-08-02T06:46:53.731Z",
-      "updated": "2025-08-02T07:31:24.111Z",
+      "updated": "2025-08-03T03:45:36.975Z",
       "description": "Tasks for master context"
     }
   }

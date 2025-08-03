@@ -1,0 +1,31 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.about-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.about-image img {
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+}
