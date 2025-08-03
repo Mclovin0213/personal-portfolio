@@ -1,4 +1,6 @@
 import React from 'react';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import './Experience.css';
 
 const experiences = [
@@ -67,22 +69,32 @@ const Experience: React.FC = () => {
   return (
     <section id="experience" className="experience-section" aria-label="My Professional Experience">
       <h2>Experience</h2>
-      <div className="timeline">
+      <VerticalTimeline lineColor="var(--border-color)">
         {experiences.map((exp, index) => (
-          <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
-            <div className="timeline-content">
-              <h3>{exp.title}</h3>
-              <h4>{exp.company}</h4>
-              <p className="timeline-date">{exp.dates}</p>
-              <ul>
-                {exp.responsibilities.map((res, i) => (
-                  <li key={i}>{res}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <VerticalTimelineElement
+            key={index}
+            className="vertical-timeline-element--work"
+            contentStyle={{
+              background: 'var(--secondary-background)',
+              color: 'var(--text-color-light)',
+              border: '1px solid var(--border-color)',
+              boxShadow: 'none'
+            }}
+            contentArrowStyle={{ borderRight: '7px solid  var(--secondary-background)' }}
+            date={exp.dates}
+            iconStyle={{ background: 'var(--accent-color-1)', color: 'var(--text-color-light)' }}
+            icon={<div className="timeline-icon"></div>}
+          >
+            <h3 className="vertical-timeline-element-title">{exp.title}</h3>
+            <h4 className="vertical-timeline-element-subtitle">{exp.company} - {exp.location}</h4>
+            <ul>
+              {exp.responsibilities.map((res, i) => (
+                <li key={i}>{res}</li>
+              ))}
+            </ul>
+          </VerticalTimelineElement>
         ))}
-      </div>
+      </VerticalTimeline>
     </section>
   );
 };
