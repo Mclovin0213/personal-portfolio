@@ -1,26 +1,103 @@
 .education-section {
   padding: 4rem 0;
+  text-align: center;
+}
+
+.education-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #e0e0e0; /* Light gray for heading */
 }
 
 .education-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
 .education-item {
-  margin-bottom: 1.5rem;
+  background-color: #1a202c; /* Darker background for the card */
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Softer shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.education-item h3 {
-  font-size: 1.5rem;
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+.education-icon {
+  font-size: 3rem;
+  color: #63b3ed; /* A light blue for the icon */
+  background-color: #2d3748; /* Slightly lighter dark background for icon circle */
+  border-radius: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 6rem; /* Ensure icon circle has enough space */
+  height: 6rem;
+}
+
+.education-details {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.education-details h3 {
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
+  color: #ffffff; /* White for degree */
 }
 
-.education-item p {
+.education-details .institution {
+  font-size: 1.2rem;
+  color: #a0aec0; /* Lighter gray for institution */
+  margin-bottom: 0.25rem;
+}
+
+.education-details .year {
   font-size: 1rem;
+  color: #cbd5e0; /* Even lighter gray for year */
 }
 
 @media (max-width: 768px) {
   .education-section {
     padding: 2rem 1rem;
+  }
+
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .education-icon {
+    margin-bottom: 1rem;
+  }
+
+  .education-details {
+    text-align: center;
+  }
+
+  .education-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .education-details .institution {
+    font-size: 1rem;
+  }
+
+  .education-details .year {
+    font-size: 0.9rem;
   }
 }

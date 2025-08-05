@@ -16,8 +16,15 @@ const Education: React.FC = () => {
       <div className="education-list">
         {education.map((edu, index) => (
           <div key={index} className="education-item">
-            <h3>{edu.degree}</h3>
-            <p>{edu.institution} - {edu.year}</p>
+            <div className="education-icon">
+              {/* Placeholder for education icon */}
+              🎓
+            </div>
+            <div className="education-details">
+              <h3>{edu.degree}</h3>
+              <p className="institution">{edu.institution}</p>
+              <p className="year">{edu.year}</p>
+            </div>
           </div>
         ))}
       </div>

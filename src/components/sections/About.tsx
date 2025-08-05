@@ -17,7 +17,7 @@ const About: React.FC = () => {
         </p>
       </div>
       <div className="about-image">
-        <img src="https://via.placeholder.com/150" alt="Headshot" />
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQHT_QOoxZlLIg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1696455761375?e=1757548800&v=beta&t=0sejIoyGZvGexKsnQY_bIjjC5arvWqO20z25--9j6fw" alt="Headshot" />
       </div>
     </section>
   );

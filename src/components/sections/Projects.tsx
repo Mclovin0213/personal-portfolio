@@ -30,7 +30,7 @@ const projects = [
   {
     title: 'GlucoBake App',
     description: 'Your ultimate recipe assistant! Easily scan recipes through text or images, get ingredient sugar content, and discover healthier AI-driven substitutes to lower sugar intake.',
-    imageUrl: 'https://via.placeholder.com/300', // Placeholder, replace with actual image
+    imageUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/6f/55/c5/6f55c564-d470-0e85-1d32-592f5874a6da/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.webp', // Placeholder, replace with actual image
     demoUrl: 'https://apps.apple.com/us/app/gluco-bake-app/id6456987897',
     repoUrl: '#', // No specific repo URL provided
     technologies: ['AI', 'Mobile Development', 'Image Recognition'],
@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'Eco-wise',
     description: 'EcoWise is an AI-powered mobile application designed to promote sustainable living. It helps users easily identify how to properly dispose of any item by simply scanning it with their phone.',
-    imageUrl: 'https://via.placeholder.com/300', // Placeholder, replace with actual image
+    imageUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cf/9b/e4/cf9be4d1-7c13-3ce8-6e65-d69e7ffffdf1/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/230x0w.webp', // Placeholder, replace with actual image
     demoUrl: 'https://apps.apple.com/us/app/eco-wise/id6747984021',
     repoUrl: '#', // No specific repo URL provided
     technologies: ['AI', 'Mobile Development', 'Sustainable Technology', 'Image Recognition'],

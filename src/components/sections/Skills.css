@@ -31,24 +31,62 @@
 
 .skill-item {
   display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  margin-bottom: 1.5rem; /* More space between skill items */
+  padding: 0.5rem 0;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem; /* Space between header and progress bar */
 }
 
-.skill-icon {
-  font-size: 2rem;
-  margin-right: 1rem;
-  color: var(--accent-color-1);
-}
-
-.skill-info h4 {
+.skill-header h4 {
   margin: 0;
   color: var(--text-color-light);
+  font-size: 1.1rem;
 }
 
-.skill-proficiency {
-  font-size: 0.9rem;
-  color: var(--text-color-medium);
+.skill-percentage {
+  color: var(--text-color-light);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.skill-progress-container {
+  width: 100%; /* Take full width */
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  position: relative;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  background-color: var(--accent-color-1);
+  border-radius: 4px;
+  transition: width 0.5s ease-in-out;
+}
+
+.show-more-button {
+  display: block;
+  width: fit-content;
+  margin: 1.5rem auto 0;
+  padding: 0.6rem 1.2rem;
+  background-color: transparent;
+  color: var(--accent-color-1);
+  border: 1px solid var(--accent-color-1);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.show-more-button:hover {
+  background-color: var(--accent-color-1);
+  color: var(--primary-background);
 }
 
 @media (max-width: 768px) {
