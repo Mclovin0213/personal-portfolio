@@ -13,7 +13,7 @@ html {
   --text-color-dark: #1a1a2e; /* Dark text for elements on light backgrounds */
   --border-color: #4a4e69; /* Border color for various elements */
 
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  activeSection: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ activeSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -23,11 +27,11 @@ const Header: React.FC = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact" aria-label="Contact section">Contact</a>
+        <a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a>
+        <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Projects</a>
+        <a href="#skills" className={activeSection === 'skills' ? 'active' : ''}>Skills</a>
+        <a href="#experience" className={activeSection === 'experience' ? 'active' : ''}>Experience</a>
+        <a href="#contact" className={activeSection === 'contact' ? 'active' : ''} aria-label="Contact section">Contact</a>
       </nav>
     </header>
   );

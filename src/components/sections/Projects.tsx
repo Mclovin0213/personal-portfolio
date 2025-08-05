@@ -16,17 +16,17 @@ interface Project {
 }
 
 const projects = [
-  {
-    title: 'Flutter Mobile App Development with K–12 Students',
-    description: 'Supported the design, development, and debugging of 6+ mobile applications using Flutter and Firebase.',
-    imageUrl: 'https://via.placeholder.com/300', // Placeholder, replace with actual image
-    demoUrl: '#', // No specific demo URL provided
-    repoUrl: '#', // No specific repo URL provided
-    technologies: ['Flutter', 'Dart', 'Firebase', 'Project Management'],
-    fullDescription: 'Supported the design, development, and debugging of 6+ mobile applications using Flutter and Firebase. Guided students through research, app architecture, GitHub collaboration, and publication processes. Apps are live on the Google Play Store and Apple App Store under Coding Mind Academy\'s profile.',
-    challenges: 'Guiding K-12 students through complex app development concepts and publication processes.',
-    solutions: 'Developed simplified explanations, provided hands-on debugging support, and streamlined the publication workflow.'
-  },
+  // {
+  //   title: 'Flutter Mobile App Development with K–12 Students',
+  //   description: 'Supported the design, development, and debugging of 6+ mobile applications using Flutter and Firebase.',
+  //   imageUrl: 'https://via.placeholder.com/300', // Placeholder, replace with actual image
+  //   demoUrl: '#', // No specific demo URL provided
+  //   repoUrl: '#', // No specific repo URL provided
+  //   technologies: ['Flutter', 'Dart', 'Firebase', 'Project Management'],
+  //   fullDescription: 'Supported the design, development, and debugging of 6+ mobile applications using Flutter and Firebase. Guided students through research, app architecture, GitHub collaboration, and publication processes. Apps are live on the Google Play Store and Apple App Store under Coding Mind Academy\'s profile.',
+  //   challenges: 'Guiding K-12 students through complex app development concepts and publication processes.',
+  //   solutions: 'Developed simplified explanations, provided hands-on debugging support, and streamlined the publication workflow.'
+  // },
   {
     title: 'GlucoBake App',
     description: 'Your ultimate recipe assistant! Easily scan recipes through text or images, get ingredient sugar content, and discover healthier AI-driven substitutes to lower sugar intake.',
