@@ -7,6 +7,7 @@ import Projects from './components/sections/Projects';
 import Skills from './components/sections/Skills';
 import Experience from './components/sections/Experience';
 import Contact from './components/sections/Contact';
+import Footer from './components/layout/Footer';
 import './App.css';
 import Education from './components/sections/Education';
 
@@ -66,6 +67,7 @@ const App: React.FC = () => {
         <div id="experience" ref={sectionRefs.experience}><Experience /></div>
         <div id="contact" ref={sectionRefs.contact}><Contact /></div>
       </main>
+      <Footer />
     </div>
   );
 };

@@ -32,6 +32,22 @@
   color: #61dafb;
 }
 
+.cta-button {
+  background-color: #61dafb;
+  color: #000000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ffffff;
+}
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 3rem;

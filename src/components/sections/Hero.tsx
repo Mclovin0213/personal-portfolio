@@ -16,6 +16,7 @@ const Hero: React.FC = () => {
           <FaLinkedin /> LinkedIn
         </a>
         </div>
+        <a href="#projects" className="cta-button">View My Work</a>
       </div>
     </section>
   );
