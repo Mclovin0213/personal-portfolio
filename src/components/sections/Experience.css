@@ -25,20 +25,48 @@
 }
 
 .vertical-timeline-element-title {
-  color: var(--accent-color-1) !important;
+  color: var(--text-color-light) !important;
   margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .vertical-timeline-element-subtitle {
   color: var(--text-color-medium) !important;
-  font-size: 0.9rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: normal;
   margin-bottom: 0.5rem;
 }
 
 .vertical-timeline-element-date {
   color: var(--text-color-medium) !important;
   opacity: 1 !important; /* Ensure date is visible */
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start of the column */
+  margin-bottom: 0.5rem;
+}
+
+.vertical-timeline-element-date-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--text-color-medium);
+  font-size: 0.9rem;
+}
+
+.vertical-timeline-element-description {
+  color: var(--text-color-light);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
 }
 
 .vertical-timeline-element-icon {
