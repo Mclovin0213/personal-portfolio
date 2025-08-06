@@ -10,10 +10,10 @@ const Hero: React.FC = () => {
         <p className="hero-subtitle">Software Engineer & Creator</p>
         <div className="social-links">
         <a href="https://github.com/Mclovin0213" target="_blank" rel="noopener noreferrer">
-          <FaGithub /> GitHub
+          <FaGithub /> <span className="social-link-text">GitHub</span>
         </a>
         <a href="http://www.linkedin.com/in/julianavellaneda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-          <FaLinkedin /> LinkedIn
+          <FaLinkedin /> <span className="social-link-text">LinkedIn</span>
         </a>
         </div>
         <a href="#projects" className="cta-button">View My Work</a>

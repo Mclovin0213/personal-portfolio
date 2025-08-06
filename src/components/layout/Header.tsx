@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 interface HeaderProps {
   activeSection: string;
@@ -7,6 +8,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ activeSection }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,15 +26,25 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-      <nav>
-        <a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a>
-        <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Projects</a>
-        <a href="#skills" className={activeSection === 'skills' ? 'active' : ''}>Skills</a>
-        <a href="#experience" className={activeSection === 'experience' ? 'active' : ''}>Experience</a>
-        <a href="#contact" className={activeSection === 'contact' ? 'active' : ''} aria-label="Contact section">Contact</a>
-      </nav>
+      <div className="header-content">
+        <div className="logo-placeholder"></div>
+        <button className="hamburger-menu" onClick={toggleMenu} aria-label="Toggle navigation menu">
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
+        </button>
+        <nav className={isMenuOpen ? 'open' : ''}>
+          <a href="#about" className={activeSection === 'about' ? 'active' : ''} onClick={toggleMenu}>About</a>
+          <a href="#projects" className={activeSection === 'projects' ? 'active' : ''} onClick={toggleMenu}>Projects</a>
+          <a href="#skills" className={activeSection === 'skills' ? 'active' : ''} onClick={toggleMenu}>Skills</a>
+          <a href="#experience" className={activeSection === 'experience' ? 'active' : ''} onClick={toggleMenu}>Experience</a>
+          <a href="#contact" className={activeSection === 'contact' ? 'active' : ''} aria-label="Contact section" onClick={toggleMenu}>Contact</a>
+        </nav>
+      </div>
     </header>
   );
 };

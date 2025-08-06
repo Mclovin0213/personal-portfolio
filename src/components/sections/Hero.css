@@ -56,4 +56,8 @@
   .hero-subtitle {
     font-size: 1.2rem;
   }
+
+  .social-links a .social-link-text {
+    display: none; /* Hide text on small screens */
+  }
 }
