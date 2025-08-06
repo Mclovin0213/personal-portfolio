@@ -112,7 +112,7 @@ const Skills: React.FC = () => {
         {renderSkillCategory('languages', skills.languages)}
         {renderSkillCategory('frameworks', skills.frameworks)}
         {renderSkillCategory('tools', skills.tools)}
-        {renderSkillCategory('concepts', skills.concepts)}
+        {/* {renderSkillCategory('concepts', skills.concepts)} */}
         {/* {renderSkillCategory('softSkills', skills.softSkills)} */}
       </div>
     </section>

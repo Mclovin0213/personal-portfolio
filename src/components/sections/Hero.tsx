@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero: React.FC = () => {
   return (
@@ -8,8 +9,12 @@ const Hero: React.FC = () => {
         <h1 className="hero-title">Julian Avellaneda</h1>
         <p className="hero-subtitle">Software Engineer & Creator</p>
         <div className="social-links">
-          <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
+        <a href="https://github.com/Mclovin0213" target="_blank" rel="noopener noreferrer">
+          <FaGithub /> GitHub
+        </a>
+        <a href="http://www.linkedin.com/in/julianavellaneda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <FaLinkedin /> LinkedIn
+        </a>
         </div>
       </div>
     </section>

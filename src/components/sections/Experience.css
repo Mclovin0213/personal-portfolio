@@ -10,7 +10,6 @@
   font-size: 2.5rem;
 }
 
-/* Styling for react-vertical-timeline-component */
 .vertical-timeline-element-content {
   background: var(--secondary-background) !important;
   color: var(--text-color-light) !important;
