@@ -67,3 +67,9 @@ export default tseslint.config([
   },
 ])
 ```
+
+
+
+How to build
+
+bunx --bun vite build

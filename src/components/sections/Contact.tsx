@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm('service_xd3xhk8', 'template_w3kt41c', form.current, {
+          publicKey: '8zMdG59O_RJKFBQfk',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            alert('Message sent successfully!');
+            form.current?.reset(); // Clear the form after successful submission
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            alert('Failed to send message. Please try again later.');
+          },
+        );
+    }
+  };
+
   return (
     <section id="contact" className="contact-section">
       <h2>Contact Me</h2>
@@ -19,15 +44,15 @@ const Contact: React.FC = () => {
       </div>
       <div className="contact-form">
         <h3>Send me a message</h3>
-        <form>
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+        <form ref={form} onSubmit={sendEmail}>
+          <label>Name:</label>
+          <input type="text" name="name" required />
 
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <label>Email:</label>
+          <input type="email" name="email" required />
 
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" rows={5} required></textarea>
+          <label>Message:</label>
+          <textarea name="message" rows={5} required></textarea>
 
           <button type="submit">Send Message</button>
         </form>

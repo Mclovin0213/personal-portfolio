@@ -4,6 +4,7 @@
     "": {
       "name": "personal-portfolio",
       "dependencies": {
+        "@emailjs/browser": "^4.4.1",
         "@types/react-vertical-timeline-component": "^3.3.6",
         "prop-types": "^15.8.1",
         "react": "^19.1.0",
@@ -125,6 +126,8 @@
     "@babel/traverse": ["@babel/traverse@7.0.0-beta.56", "", { "dependencies": { "@babel/code-frame": "7.0.0-beta.56", "@babel/generator": "7.0.0-beta.56", "@babel/helper-function-name": "7.0.0-beta.56", "@babel/helper-split-export-declaration": "7.0.0-beta.56", "@babel/parser": "7.0.0-beta.56", "@babel/types": "7.0.0-beta.56", "debug": "^3.1.0", "globals": "^11.1.0", "lodash": "^4.17.10" } }, "sha512-9WTqtKP2Ll+jG68r+JEecXAbdH/kk5inN1VDSDaTgdYtZ82BYUS9XRWMVpc5HB9LJsu2ZEyUA1cGybID7eeOXA=="],
 
     "@babel/types": ["@babel/types@7.0.0-beta.56", "", { "dependencies": { "esutils": "^2.0.2", "lodash": "^4.17.10", "to-fast-properties": "^2.0.0" } }, "sha512-fRIBeHtKxAD3D1E7hYSpG4MnLt0AfzHHs5gfVclOB0NlfLu3qiWU/IqdbK2ixTK61424iEkV1P/VAzndx6ungA=="],
+
+    "@emailjs/browser": ["@emailjs/browser@4.4.1", "", {}, "sha512-DGSlP9sPvyFba3to2A50kDtZ+pXVp/0rhmqs2LmbMS3I5J8FSOgLwzY2Xb4qfKlOVHh29EAutLYwe5yuEZmEFg=="],
 
     "@emnapi/runtime": ["@emnapi/runtime@1.4.5", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-++LApOtY0pEEz1zrd9vy1/zXVaVJJ/EbAF3u0fXIzPJEDtnITsBGbbK0EkM72amhl/R5b+5xx0Y/QhcVOpuulg=="],
 
