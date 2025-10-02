@@ -53,7 +53,7 @@ const App: React.FC = () => {
     <div>
       <Starfield
         starCount={1500}
-        starColor={[255, 255, 255]}
+        starColor={[255, 25, 255]}
         speedFactor={0.05}
         backgroundColor="black"
       />

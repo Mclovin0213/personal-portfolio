@@ -6,3 +6,23 @@
   bottom: 0;
   width: 100%;
 }
+
+.hidden-links {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.hidden-links:hover {
+  opacity: 1;
+}
+
+.hidden-links a {
+  color: #aaa !important;
+  font-size: 12px !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hidden-links a:hover {
+  color: #ddd !important;
+}
