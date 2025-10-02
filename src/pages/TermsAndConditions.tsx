@@ -1,13 +1,14 @@
 import { useParams } from 'react-router-dom';
+import './LegalPages.css';
 
 const TermsAndConditions = () => {
   const { appName: routeAppName } = useParams<{ appName: string }>();
   const appName = routeAppName || "Gather";
-  const contactEmail = "support@yourdomain.com";
+  const contactEmail = "vella_media@proton.me";
   const lastUpdated = "October 2, 2025";
 
   return (
-    <div className="legal-page-container" style={{ padding: '20px', maxWidth: '800px', margin: '0 auto', fontFamily: 'Arial, sans-serif' }}>
+    <div className="legal-page-container">
       <h1>Terms and Conditions for {appName}</h1>
       <p><strong>Last Updated:</strong> {lastUpdated}</p>
 

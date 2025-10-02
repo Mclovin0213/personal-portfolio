@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './LegalPages.css';
 
 const RequestAccountDeletion = () => {
   const { appName: routeAppName } = useParams<{ appName: string }>();
@@ -24,7 +25,7 @@ const RequestAccountDeletion = () => {
 
   if (isSubmitted) {
     return (
-      <div className="legal-page-container" style={{ padding: '20px', maxWidth: '800px', margin: '0 auto', fontFamily: 'Arial, sans-serif' }}>
+      <div className="legal-page-container">
         <h1>Deletion Request Received</h1>
         <p>
           We have received your account deletion request for <strong>{email}</strong>.
@@ -41,7 +42,7 @@ const RequestAccountDeletion = () => {
     <div className="legal-page-container" style={{ padding: '20px', maxWidth: '800px', margin: '0 auto', fontFamily: 'Arial, sans-serif' }}>
       <h1>Request Account Deletion</h1>
       
-      <div className="warning-box" style={{ backgroundColor: '#ffebee', padding: '15px', borderRadius: '4px', marginBottom: '20px' }}>
+      <div className="warning-box">
         <p><strong>Warning:</strong> This action is permanent and cannot be undone.</p>
       </div>
 
@@ -67,8 +68,8 @@ const RequestAccountDeletion = () => {
         To confirm that you want to permanently delete your account, please enter your email address below and click the delete button.
       </p>
 
-      <form onSubmit={handleSubmit} style={{ marginTop: '20px' }}>
-        <div style={{ marginBottom: '15px' }}>
+      <form onSubmit={handleSubmit}>
+        <div>
           <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>Your Account Email:</label>
           <input
             type="email"
@@ -93,15 +94,6 @@ const RequestAccountDeletion = () => {
         <button
           type="submit"
           className="delete-button"
-          style={{
-            backgroundColor: '#f44336',
-            color: 'white',
-            padding: '12px 24px',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            fontSize: '16px'
-          }}
         >
           Permanently Delete My Account
         </button>
